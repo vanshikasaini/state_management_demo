@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:state_management_demo/riverpod_providers/screens/counter_widget.dart';
+import 'package:state_management_demo/riverpod_providers/screens/counter_widget_state)notifier.dart';
 import 'package:state_management_demo/riverpod_providers/screens/home_scrn.dart';
 import 'package:state_management_demo/riverpod_providers/screens/number_scrn.dart';
 import 'package:state_management_demo/riverpod_providers/screens/weather_scrn.dart';
@@ -35,7 +36,7 @@ class MyStateNotifierProviderApp extends StatelessWidget {
         onPressed: (){
           Navigator.push(context,
               MaterialPageRoute(
-                  builder: (context) => NumberScreen()));
+                  builder: (context) => CounterWidgetStateNotifier()));
         },
         child: Text("StateNotifierProvider"));
   }
